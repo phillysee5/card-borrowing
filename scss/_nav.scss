@@ -1,3 +1,5 @@
+$border: 1px solid lightgrey;
+
 .nav {
   background-color: lavender;
   height: 100px;
@@ -53,7 +55,7 @@
       background-color: mistyrose;
       margin-bottom: 5px;
       width: 60px;
-      border: 1px solid lightgrey;
+      border: $border;
       border-radius: 3px;
       }
       @media screen and (max-width: 810px) {
