@@ -104,7 +104,7 @@ body {
     background-color: mistyrose;
     margin-bottom: 5px;
     width: 60px;
-    border: 1px solid lightgrey;
+    border: 1px solid lightgray;
     border-radius: 3px; }
   @media screen and (max-width: 810px) {
     .nav li a {
@@ -172,50 +172,79 @@ body {
   height: 220px;
   float: left; }
 
-@media screen and (max-width: 600px) {
-  .profile .profile {
-    width: 95%; } }
-.profile h3 {
+.container a {
+  color: black;
+  background-color: oldlace;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px; }
+.container h3 {
+  padding-left: 10px; }
+
+.onloan {
+  display: flex; }
+  .onloan .item {
+    width: 200px;
+    height: 170px;
+    background-color: oldlace;
+    margin-left: 10px; }
+    .onloan .item img {
+      margin-top: 10px;
+      margin-left: 10px; }
+
+h3 {
   padding-top: 5px;
   margin: 0; }
-.profile img {
+
+#avatar {
   height: 180px;
   width: 180px;
   float: left;
   margin: 10px; }
+
 @media screen and (max-width: 810px) {
-  .profile img {
+  #avatar {
     height: 120px;
     width: 120px; } }
 @media screen and (max-width: 600px) {
-  .profile img {
+  #avatar {
     height: 100px;
     width: 100px; } }
-
-.loaneditems {
-  display: inline-flex; }
-  @media screen and (max-width: 600px) {
-    .loaneditems .loaneditems {
-      width: 95%; } }
-  .loaneditems .card {
-    margin: 10px;
-    padding-top: 20px;
-    background-color: grey;
-    height: 150px;
-    width: 150px; }
-  .loaneditems .blankcard {
-    margin-left: 20px;
-    background-color: ivory;
-    height: 110px;
-    width: 60px;
-    border-radius: 5px; }
-
 .signup-form {
   width: 80%;
   height: 700px;
   background-color: lightsteelblue;
   margin: 0 auto;
-  margin-top: 20px; }
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-top: 20px; }
+  .signup-form .textentry {
+    margin-top: 10px;
+    width: 60%;
+    float: right;
+    margin-right: 80px; }
+  .signup-form .chooseclass {
+    width: 250px;
+    height: 200px; }
+  .signup-form .image {
+    margin-top: 20px;
+    float: right; }
+    .signup-form .image #placeholder {
+      height: 150px;
+      width: 150px; }
+  .signup-form input {
+    padding: 5px;
+    width: 80%;
+    border-radius: 4px; }
+  .signup-form #submit {
+    width: 100px !important; }
+
+.borrow {
+  padding-left: 15px; }
+  .borrow button {
+    margin-top: 10px;
+    font-size: 1em;
+    padding: 10px; }
 
 a {
   text-decoration: none; }

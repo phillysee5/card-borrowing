@@ -6,66 +6,100 @@
   width: 46%;
   height: 220px;
   float: left;
-
   }
 
-.profile {
-  @media screen and (max-width: 600px) {
-  .profile {
-    width: 95%;
+.container {
+  a {
+  color: black;
+  background-color: oldlace;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  }
+  h3 {
+    padding-left: 10px;
+  }
+}
+.onloan {
+  display: flex;
+  .item {
+    width: 200px;
+    height: 170px;
+    background-color: oldlace;
+    margin-left: 10px;
+    img {
+      margin-top: 10px;
+      margin-left: 10px;
     }
   }
+}
 
   h3{
     padding-top: 5px;
     margin: 0;
   }
-  img {
+  #avatar {
     height: 180px;
     width: 180px;
     float: left;
     margin: 10px;
   }
   @media screen and (max-width: 810px) {
-    img {
+    #avatar {
       height: 120px;
       width: 120px;
         }
   }
   @media screen and (max-width: 600px) {
-    img {
+    #avatar {
       height: 100px;
       width: 100px;
     }
   }
-}
 
-.loaneditems {
-  display: inline-flex;
-  @media screen and (max-width: 600px) {
-  .loaneditems {
-      width: 95%;
-    }
-  }
-  .card {
-    margin: 10px;
-    padding-top: 20px;
-    background-color: grey;
-    height: 150px;
-    width: 150px;
-    }
-  .blankcard {
-    margin-left: 20px;
-    background-color: ivory;
-    height: 110px;
-    width: 60px;
-    border-radius: 5px;
-    }
-  }
+
+
 .signup-form {
   width: 80%;
   height: 700px;
   background-color: lightsteelblue;
   margin: 0 auto;
   margin-top: 20px;
+  padding-left: 30px;
+  padding-top: 20px;
+  .textentry {
+    margin-top: 10px;
+    width: 60%;
+    float:right;
+    margin-right: 80px;
+    }
+  .chooseclass {
+    width: 250px;
+    height: 200px;
+    }
+  .image {
+    margin-top: 20px;
+    float: right;
+    #placeholder {
+      height: 150px;
+      width: 150px;
+      }
+    }
+    input {
+      padding: 5px;
+      width: 80%;
+      border-radius: 4px;
+      }
+    #submit {
+      width: 100px !important;
+    }
+}
+
+.borrow {
+  padding-left: 15px;
+  button {
+    margin-top: 10px;
+    font-size: 1em;
+    padding: 10px;
+  }
 }
