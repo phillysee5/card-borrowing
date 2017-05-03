@@ -1,0 +1,136 @@
+.nav {
+  background-color: lavender;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+    @media screen and (max-width: 810px) {
+      .nav {
+        padding-bottom: 0px;
+      }
+    }
+    img {
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+    margin-top: 20px;
+    float: left;
+    }
+      @media screen and (max-width: 810px) {
+        img {
+          height: 60px;
+          width: 60px;
+        }
+      }
+  .headings {
+    display: block;
+  }
+  .links {
+    margin-right: 20px;
+    margin-top: 10px;
+    }
+    @media screen and (max-width: 810px) {
+      .links {
+        margin-top: 0px;
+      }
+    }
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      .links {
+        display: none;
+      }
+    }
+    ul {
+      list-style: none;
+      display: inline-block;
+      padding-left: 0px;
+    }
+    li a {
+      display: inline-block;
+      text-decoration: none;
+      color: black;
+      padding: 5px;
+      background-color: mistyrose;
+      margin-bottom: 5px;
+      width: 60px;
+      border: 1px solid lightgrey;
+      border-radius: 3px;
+      @media screen and (max-width: 810px) {
+        li a {
+          padding: 3px;
+          font-size: .9em;
+        }
+      }
+      li a:hover {
+      background-color: honeydew;
+      color: darkgreen;
+      }
+    }
+
+  h1 {
+    text-align: center;
+    top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+    @media screen and (max-width: 810px) {
+      h1 {
+        font-size: 1.5em;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      h1 {
+      margin-top: 30px;
+      font-size: 1.1em;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      h1 {
+        margin-top: 30px;
+        font-size: 0.8em;
+        font-weight: 900;
+      }
+    }
+  h2 {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-left: 50px;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    top: 80px;
+  }
+  @media screen and (max-width: 810px) {
+    h2 {
+      top: 70px;
+      font-size: 1.1em;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    h2 {
+      font-size: 0.9em;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    h2 {
+      font-size: 0.8em;
+    }
+  }
+  #burger {
+    height: 40px;
+    width: 40px;
+  }
+  @media screen and (min-width: 700px) {
+    #burger {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 0px) and (max-width: 700px) {
+    #burger {
+      display: block;
+      padding-top: 8px;
+      padding-right: 20px;
+    }
+  }
+}
