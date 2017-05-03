@@ -1,5 +1,5 @@
 $( document ).ready(){
-$(".fa-bars").click(function(){
-        $(".modal").show();
-    });
-});
+  $('#burger').click(function() {
+               $('.modal').show();
+       });
+   });

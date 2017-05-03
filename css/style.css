@@ -163,42 +163,36 @@ body {
     .nav .burger {
       display: block; } }
 
-.profile {
+.container {
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
   background-color: lightsteelblue;
-  width: 50%;
+  width: 46%;
   height: 220px;
+  float: left; }
+
+@media screen and (max-width: 600px) {
+  .profile .profile {
+    width: 95%; } }
+.profile h3 {
+  padding-top: 5px;
+  margin: 0; }
+.profile img {
+  height: 180px;
+  width: 180px;
   float: left;
-  border: solid 10px white; }
-  @media screen and (max-width: 600px) {
-    .profile .profile {
-      width: 95%; } }
-  .profile h3 {
-    padding-top: 5px;
-    margin: 0; }
+  margin: 10px; }
+@media screen and (max-width: 810px) {
   .profile img {
-    height: 180px;
-    width: 180px;
-    float: left;
-    margin: 10px; }
-  @media screen and (max-width: 810px) {
-    .profile img {
-      height: 120px;
-      width: 120px; } }
-  @media screen and (max-width: 600px) {
-    .profile img {
-      height: 100px;
-      width: 100px; } }
+    height: 120px;
+    width: 120px; } }
+@media screen and (max-width: 600px) {
+  .profile img {
+    height: 100px;
+    width: 100px; } }
 
 .loaneditems {
-  box-sizing: border-box;
-  margin-top: 20px;
-  background-color: lightsteelblue;
-  width: 50%;
-  height: 220px;
-  float: left;
-  border: solid 10px white;
   display: inline-flex; }
   @media screen and (max-width: 600px) {
     .loaneditems .loaneditems {
@@ -216,10 +210,12 @@ body {
     width: 60px;
     border-radius: 5px; }
 
-.test {
-  width: 500px;
+.signup-form {
+  width: 80%;
   height: 700px;
-  background-color: grey; }
+  background-color: lightsteelblue;
+  margin: 0 auto;
+  margin-top: 20px; }
 
 a {
   text-decoration: none; }
