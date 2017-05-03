@@ -11,6 +11,7 @@ body {
     margin-top: 20px; }
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   background: #FFF;
@@ -51,7 +52,7 @@ body {
         text-decoration: none;
         color: lavender;
         font-size: 1.1em;
-        font-weight: 600;
+        font-weight: 400;
         padding-left: 5px;
         padding-right: 3px; }
       .modal .modal-menu li a:hover {
@@ -77,6 +78,9 @@ body {
     .nav img {
       height: 60px;
       width: 60px; } }
+  @media screen and (max-width: 500px) {
+    .nav img {
+      margin-top: 30px; } }
   .nav .headings {
     display: block; }
   .nav .links {
@@ -147,17 +151,17 @@ body {
       font-size: 0.8em;
       margin-top: 30px;
       left: 50px; } }
-  .nav #burger {
-    height: 40px;
-    width: 40px; }
+  .nav .burger {
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 3em;
+    color: black; }
   @media screen and (min-width: 700px) {
-    .nav #burger {
+    .nav .burger {
       display: none; } }
   @media screen and (min-width: 0px) and (max-width: 700px) {
-    .nav #burger {
-      display: block;
-      padding-top: 8px;
-      padding-right: 20px; } }
+    .nav .burger {
+      display: block; } }
 
 .profile {
   box-sizing: border-box;
@@ -211,3 +215,6 @@ body {
     height: 110px;
     width: 60px;
     border-radius: 5px; }
+
+a {
+  text-decoration: none; }

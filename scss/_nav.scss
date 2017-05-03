@@ -25,6 +25,11 @@ $border: 1px solid lightgrey;
           width: 60px;
         }
       }
+      @media screen and (max-width: 500px) {
+        img {
+          margin-top: 30px;
+        }
+      }
   .headings {
     display: block;
   }
@@ -123,20 +128,21 @@ $border: 1px solid lightgrey;
       left: 50px;
     }
   }
-  #burger {
-    height: 40px;
-    width: 40px;
-  }
-  @media screen and (min-width: 700px) {
-    #burger {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 0px) and (max-width: 700px) {
-    #burger {
-      display: block;
-      padding-top: 8px;
-      padding-right: 20px;
+  .burger {
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 3em;
+    color: black;
+
+      }
+      @media screen and (min-width: 700px) {
+      .burger {
+        display: none;
+        }
+      }
+      @media screen and (min-width: 0px) and (max-width: 700px) {
+      .burger {
+        display: block;
     }
   }
 }
