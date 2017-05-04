@@ -18,7 +18,7 @@
         </div>
             <div class="links">
             <ul>
-              <li><a href="">Login</a></li>
+              <li><button id="listanitem" data-popup-open="popup-2" type="button" name="button">Login</button></li>
               <li><a href="sign-up.html">Sign Up</a></li>
             </ul>
             <ul>
@@ -26,7 +26,7 @@
               <li><a href="faq.html">FAQ</a></li>
             </ul>
             <ul>
-              <li><a href="borrow.html">Borrow</a></li>
+              <li><a href="listings.html">Borrow</a></li>
               <li><a href="">Report</a></li>
             </ul>
             </div>
@@ -72,6 +72,10 @@
           </form>
           <button id="submit" type="button" name="button">Sign Up</button>
 
+          <div class="signedup">
+            <a href="index.html">Continue</a>
+          </div>
+
         <div class="dropdown">
           <div class="modal-menu">
             <a href="#"><i class="fa fa-window-close" aria-hidden="true"></i></a>
@@ -80,15 +84,27 @@
               <li><a href="sign-up.html">Sign Up</a></li>
               <li><a href="account.html">Account</a></li>
               <li><a href="faq.html">FAQ</a></li>
-              <li><a href="">Chat</a></li>
+              <li><a href="listings.html">Borrow</a></li>
               <li><a href="">Report</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="signedup">
-          <a href="index.html">Continue</a>
+
+
+     <div class="popup" data-popup="popup-2">
+      <div id="login" class="popup-inner">
+          <h2>Login</h2>
+          <h3>Takiuru</h3>
+           <form class="" action="index.html" method="post">
+             <p>Username</p>
+             <input type="text" name="" value=""><br>
+             <p>Password</p>
+             <input type="password" name="" value=""><br>
+             <p><a data-popup-close="popup-2" href="index.html">Proceed</a></p>
+           </form>
         </div>
+    </div>
 
 
       </div>

@@ -18,7 +18,7 @@
         </div>
           <div class="links">
             <ul>
-              <li><a href="">Login</a></li>
+              <li><button id="listanitem" data-popup-open="popup-2" type="button" name="button">Login</button></li>
               <li><a href="sign-up.html">Sign Up</a></li>
             </ul>
             <ul>
@@ -33,11 +33,73 @@
             <a href="#" id="burger">
               <i class="fa fa-bars burger" aria-hidden="true"></i>
             </a>
+        </div>
+
+<div class="largecontainer">
+  <h1>My Account</h1>
+  <h2>Toku Pūkete</h2>
+    <div class="container">
+      <img id="avatar" src="img/lars.jpg" alt="">
+      <h3>LincolnsTeeth</h3>
+      </p>Level 13 Warrior</p>
+      <p>Experience until next level: 300</p>
+      <br><br>
+      <h3>My items</h3><br><br>
+      <img src="img/glass-sword.png" alt="" height="50" width="50">
+      <img src="img/green-sword.png" alt="" height="50" width="50">
+      <img src="img/flame-sword.png" alt="" height="50" width="50">
+    </div>
+</div>
+
+          <div class="dropdown">
+             <i class="fa fa-window-close" aria-hidden="true"></i>
+             <ul>
+               <li><a href="">Login</a></li>
+               <li><a href="sign-up.html">Sign Up</a></li>
+               <li><a href="account.html">Account</a></li>
+               <li><a href="faq.html">FAQ</a></li>
+               <li><a href="borrow.html">Borrow</a></li>
+               <li><a href="">Report</a></li>
+             </ul>
           </div>
 
+       <div class="popup" data-popup="popup-1">
+        <div class="popup-inner">
+            <h2>List an Item</h2>
+            <h3>Whakarārangi i te Tūemi</h3>
+             <form class="" action="index.html" method="post">
+               <p>Card/Deck Name</p>
+               <input type="text" name="" value=""><br>
+               <p>Condition</p>
+               <input type="text" name="" value=""><br>
+               <div class="image">
+                 <p>Upload an image</p>
+                 <img id="placeholder" src="img/image-placeholder.png" alt="list item image" height="100px" width="100px">
+                 <input id="choosefile" type="file">
+               </div>
+             </form>
+            <p><a data-popup-close="popup-1" href="#">List This Item</a></p>
+            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-2">
+     <div id="login" class="popup-inner">
+         <h2>Login</h2>
+         <h3>Takiuru</h3>
+          <form class="" action="index.html" method="post">
+            <p>Username</p>
+            <input type="text" name="" value=""><br>
+            <p>Password</p>
+            <input type="password" name="" value=""><br>
+            <p><a data-popup-close="popup-2" href="index.html">Proceed</a></p>
+          </form>
+       </div>
+   </div>
 
     </div>
     <script src="https://use.fontawesome.com/96bd46d27f.js"></script>
-    <script src=src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
