@@ -58,38 +58,60 @@
 
 .signup-form {
   width: 80%;
-  height: 700px;
+  height: 1000px;
+  border-radius: 10px;
   background-color: lightsteelblue;
   margin: 0 auto;
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 20px;
-  .textentry {
-    margin-top: 10px;
-    width: 60%;
-    float:right;
-    margin-right: 80px;
-    }
+
   .chooseclass {
-    width: 250px;
+    width: 48%;
     height: 200px;
+    padding-left: 5px;
+    border-right: solid grey 2px;
+    input {
+      width: 10%;
+      }
+    img {
+      width: 50px;
+      height: 50px;
     }
+  }
   .image {
+    width: 48%;
     margin-top: 20px;
+
     float: right;
     #placeholder {
       height: 150px;
       width: 150px;
+      border: solid grey 10px;
+      }
+      @media screen and (max-width: 600px){
+        #placeholder {
+          height: 75px;
+          width: 75px;
+        }
       }
     }
+
     input {
       padding: 5px;
       width: 80%;
       border-radius: 4px;
       }
     #submit {
-      width: 100px !important;
+      position: absolute;
+      width: 150px !important;
+      margin-top: 60px;
+      font-size: 1.2em;
+      padding: 15px;
+      }
     }
+.buttonholder {
+  text-align: center;
 }
 
 .borrow {

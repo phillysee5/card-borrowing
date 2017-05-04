@@ -1,4 +1,4 @@
-    .modal {
+    .dropdown {
       display: none;
       position: fixed;
       background-color: lavender;
@@ -44,10 +44,11 @@
          }
        }
 .listanitem {
+  display: none;
   height: 300px;
   width: 70%;
   background-color: yellow;
   position: absolute;
   margin-left: 10%;
-  
+
 }
