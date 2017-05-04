@@ -16,7 +16,7 @@
         <br>
         <h2>pūnaha tono hapori</h2>
         </div>
-            <div class="links">
+          <div class="links">
             <ul>
               <li><a href="">Login</a></li>
               <li><a href="sign-up.html">Sign Up</a></li>
@@ -33,14 +33,14 @@
             <a href="#" id="burger">
               <i class="fa fa-bars burger" aria-hidden="true"></i>
             </a>
-        </div>
+          </div>
 
       <div class="container borrow">
         <h3>Borrow an Item</h3>
         <p>Search</p>
         <input class="textentry" type="text" name="" value=""> <a href="listing.html"><i class="fa fa-search"></i></a>
         <button type="button" name="button">Browse By Category</button>
-        <button type="button" name="button">List an item</button>
+        <button id="listanitem" data-popup-open="popup-1" type="button" name="button">List an item</button>
       </div>
       <div class="container ">
         <h3>Currently on Loan</h3>
@@ -61,10 +61,10 @@
       </div>
 
       <div class="container profile">
-        <img id="avatar" src="img/venom.png" alt="">
+        <img id="avatar" src="img/lars.jpg" alt="">
         <h3>LincolnsTeeth</h3>
         </p>Level 13 Warrior</p>
-        <small>current items</small><br><br>
+        <small>most powerful items</small><br><br>
         <img src="img/glass-sword.png" alt="" height="50" width="50">
         <img src="img/green-sword.png" alt="" height="50" width="50">
         <img src="img/flame-sword.png" alt="" height="50" width="50">
@@ -76,6 +76,21 @@
         <img src="img/flame.png" alt="">
         <img src="img/flame.png" alt="">
         <img src="img/flame.png" alt="">
+        <img src="img/flame.png" alt="">
+        <br>
+        <img src="img/flame.png" alt="">
+        <img src="img/flame.png" alt="">
+        <img src="img/flame.png" alt="">
+        <img src="img/flame.png" alt="">
+        <img src="img/flame.png" alt="">
+        <img src="img/flame.png" alt="">
+        <p>Current total = 12</p>
+        <p>Rewards at 20, 40, &amp; 60 tokens</p>
+      </div>
+      <div class="faqbutton">
+      <form method="post" action="faq.html">
+      <button type="submit" name="button">How does our borrowing system work?</button>
+      </form>
       </div>
 
        <div class="dropdown">
@@ -90,9 +105,18 @@
           </ul>
        </div>
 
-        <div class="listanitem">
-          <h2>List an Item</h2>
-        </div>
+    <div class="popup" data-popup="popup-1">
+     <div class="popup-inner">
+         <h2>List an Item</h2>
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value=""><br>
+            <input type="text" name="" value=""><br>
+          </form>
+         <p><a data-popup-close="popup-1" href="#">Close</a></p>
+         <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+     </div>
+ </div>
+
     </div>
     <script src="https://use.fontawesome.com/96bd46d27f.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

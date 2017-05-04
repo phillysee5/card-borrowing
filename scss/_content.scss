@@ -40,6 +40,7 @@
     }
     .warning {
       padding: 5px;
+      width: 10px;
       background-color: lightgreen;
     }
   }
@@ -50,23 +51,23 @@
     margin: 0;
   }
   #avatar {
-    height: 180px;
-    width: 180px;
+    height: 120px;
+    width: 120px;
     float: left;
     margin: 10px;
   }
-  @media screen and (max-width: 810px) {
-    #avatar {
-      height: 120px;
-      width: 120px;
-        }
-  }
-  @media screen and (max-width: 600px) {
-    #avatar {
-      height: 100px;
-      width: 100px;
-    }
-  }
+  // @media screen and (max-width: 810px) {
+  //   #avatar {
+  //     height: 120px;
+  //     width: 120px;
+  //       }
+  // }
+  // @media screen and (max-width: 600px) {
+  //   #avatar {
+  //     height: 100px;
+  //     width: 100px;
+  //   }
+  // }
 
 
 
@@ -79,6 +80,10 @@
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 20px;
+
+  h3 {
+    color: grey;
+  }
 
   .chooseclass {
     width: 48%;
@@ -149,5 +154,24 @@
   padding: 10px;
   border-radius: 4px;
   border: 1px solid grey;
+  }
+}
+
+.flametoken {
+  img {
+    margin-left: 10px;
+  }
+  h3 {
+    padding-bottom: 20px;
+  }
+  p {
+    margin-left: 10px;
+  }
+}
+
+.faqbutton {
+  text-align: center;
+  button {
+    margin-top: 50px;
   }
 }

@@ -49,13 +49,55 @@ body {
     .dropdown li a:hover {
       color: #007788; }
 
-.listanitem {
+/* Outer */
+.popup {
+  width: 100%;
+  height: 100%;
   display: none;
-  height: 300px;
-  width: 70%;
-  background-color: yellow;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.75); }
+
+/* Inner */
+.popup-inner {
+  max-width: 700px;
+  width: 90%;
+  padding: 40px;
   position: absolute;
-  margin-left: 10%; }
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 2px 6px black;
+  border-radius: 3px;
+  background: #fff; }
+
+/* Close Button */
+.popup-close {
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  transition: ease 0.25s all;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  border-radius: 1000px;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: Arial, Sans-Serif;
+  font-size: 20px;
+  text-align: center;
+  line-height: 100%;
+  color: #fff; }
+
+.popup-close:hover {
+  -webkit-transform: translate(50%, -50%) rotate(180deg);
+  transform: translate(50%, -50%) rotate(180deg);
+  background: black;
+  text-decoration: none; }
 
 .nav {
   background-color: lavender;
@@ -197,6 +239,7 @@ body {
       margin-left: 10px; }
     .onloan .item .warning {
       padding: 5px;
+      width: 10px;
       background-color: lightgreen; }
 
 h3 {
@@ -204,19 +247,11 @@ h3 {
   margin: 0; }
 
 #avatar {
-  height: 180px;
-  width: 180px;
+  height: 120px;
+  width: 120px;
   float: left;
   margin: 10px; }
 
-@media screen and (max-width: 810px) {
-  #avatar {
-    height: 120px;
-    width: 120px; } }
-@media screen and (max-width: 600px) {
-  #avatar {
-    height: 100px;
-    width: 100px; } }
 .signup-form {
   width: 80%;
   height: 1000px;
@@ -226,6 +261,8 @@ h3 {
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 20px; }
+  .signup-form h3 {
+    color: grey; }
   .signup-form .chooseclass {
     width: 48%;
     height: 200px;
@@ -280,6 +317,18 @@ h3 {
     padding: 10px;
     border-radius: 4px;
     border: 1px solid grey; }
+
+.flametoken img {
+  margin-left: 10px; }
+.flametoken h3 {
+  padding-bottom: 20px; }
+.flametoken p {
+  margin-left: 10px; }
+
+.faqbutton {
+  text-align: center; }
+  .faqbutton button {
+    margin-top: 50px; }
 
 a {
   text-decoration: none; }
