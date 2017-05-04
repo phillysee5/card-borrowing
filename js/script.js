@@ -25,20 +25,4 @@ $(document).ready(function(){
           e.preventDefault();
       });
   });
-
-  $(function() {
-      //----- OPEN
-      $('[data-popup-open2]').on('click', function(e)  {
-          var targeted_popup_class = jQuery(this).attr('data-popup-open2');
-          $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-
-        });
-        //----- CLOSE
-        $('[data-popup-close]').on('click', function(e)  {
-            var targeted_popup_class = jQuery(this).attr('data-popup-close');
-            $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-
-            e.preventDefault();
-        });
-    });
 });
