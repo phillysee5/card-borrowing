@@ -186,7 +186,18 @@ body {
     margin-left: 10px; }
     .onloan .item img {
       margin-top: 10px;
+      margin-left: 10px;
+      height: 100px; }
+    .onloan .item h4 {
+      font-size: .8em;
+      margin-left: 10px;
+      margin-top: 0; }
+    .onloan .item p {
+      font-size: .8em;
       margin-left: 10px; }
+    .onloan .item .warning {
+      padding: 5px;
+      background-color: lightgreen; }
 
 h3 {
   padding-top: 5px;
