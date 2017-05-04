@@ -57,8 +57,7 @@
 
        /* Inner */
        .popup-inner {
-           max-width:700px;
-           width:90%;
+           width:250px;
            padding:40px;
            position:absolute;
            top:50%;
@@ -68,6 +67,25 @@
            box-shadow:0px 2px 6px rgba(0,0,0,1);
            border-radius:3px;
            background:#fff;
+             img {
+               margin-top: 10px;
+               border: solid grey 4px;
+             }
+             a {
+              border: solid grey 1px;
+              background-color: mistyrose;
+              color: black;
+              padding: 5px;
+              border-radius: 3px;
+             }
+             h3 {
+               color: grey;
+               margin-top: 0;
+             }
+             h2 {
+               margin-bottom: 0;
+             }
+
        }
 
        /* Close Button */
@@ -77,8 +95,8 @@
            padding-top:4px;
            display:inline-block;
            position:absolute;
-           top:0px;
-           right:0px;
+           top:20px;
+           right:20px;
            transition:ease 0.25s all;
            -webkit-transform:translate(50%, -50%);
            transform:translate(50%, -50%);
@@ -89,11 +107,4 @@
            text-align:center;
            line-height:100%;
            color:#fff;
-       }
-
-       .popup-close:hover {
-           -webkit-transform:translate(50%, -50%) rotate(180deg);
-           transform:translate(50%, -50%) rotate(180deg);
-           background:rgba(0,0,0,1);
-           text-decoration:none;
        }
