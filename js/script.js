@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
   $('#burger').click(function() {
-      $('.modal').show();
+      $('.modal').slideDown();
   });
 
   $('.fa-window-close').click(function() {
-      $('.modal').hide();
+      $('.modal').slideUp();
   });
 
 });
