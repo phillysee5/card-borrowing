@@ -19,8 +19,9 @@
 }
 .onloan {
   display: flex;
-  .item {
-    width: 150px;
+}
+ .item {
+    width: 100px;
     height: 170px;
     background-color: oldlace;
     margin-left: 10px;
@@ -44,7 +45,7 @@
       background-color: lightgreen;
     }
   }
-}
+
 
   h3{
     padding-top: 5px;
@@ -55,6 +56,8 @@
     width: 120px;
     float: left;
     margin: 10px;
+    padding-bottom: 50px;
+    background-color: grey;
   }
 
 .signup-form {
@@ -153,6 +156,9 @@
   p {
     margin-left: 10px;
   }
+  .tokens {
+    background-color: oldlace;
+  }
 }
 
 .faqbutton {
@@ -166,7 +172,7 @@
   width: 80%;
   margin: 0 auto;
   background-color: lightsteelblue;
-  height: 800px;
+  height: 1100px;
   border-radius: 10px;
   margin-top: 20px;
   padding-left: 30px;
@@ -181,6 +187,23 @@
     background-color: green;
     width: 92%;
     height: 600px;
-
+  }
+  .item {
+    padding-right: 10px;
+    h3 {
+      margin-left: 10px;
+      font-size: .9em;
+    }
+    small {
+      margin-left: 10px;
+    }
+  }
+  .row {
+    margin-bottom: 5px;
+    display: flex;
+    .description {
+      margin-left: 40px;
+      width: 300px;
+    }
   }
 }

@@ -7,8 +7,9 @@ body {
     max-width: 950px;
     margin: 0 auto;
     background-color: white;
-    height: 1200px;
-    margin-top: 20px; }
+    height: 100%;
+    margin-top: 20px;
+    padding-bottom: 20px; }
 
 .dropdown {
   display: none;
@@ -248,26 +249,27 @@ body {
 
 .onloan {
   display: flex; }
-  .onloan .item {
-    width: 150px;
-    height: 170px;
-    background-color: oldlace;
+
+.item {
+  width: 100px;
+  height: 170px;
+  background-color: oldlace;
+  margin-left: 10px; }
+  .item img {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 100px; }
+  .item h4 {
+    font-size: .8em;
+    margin-left: 10px;
+    margin-top: 0; }
+  .item p {
+    font-size: .8em;
     margin-left: 10px; }
-    .onloan .item img {
-      margin-top: 10px;
-      margin-left: 10px;
-      height: 100px; }
-    .onloan .item h4 {
-      font-size: .8em;
-      margin-left: 10px;
-      margin-top: 0; }
-    .onloan .item p {
-      font-size: .8em;
-      margin-left: 10px; }
-    .onloan .item .warning {
-      padding: 5px;
-      width: 10px;
-      background-color: lightgreen; }
+  .item .warning {
+    padding: 5px;
+    width: 10px;
+    background-color: lightgreen; }
 
 h3 {
   padding-top: 5px;
@@ -277,7 +279,9 @@ h3 {
   height: 120px;
   width: 120px;
   float: left;
-  margin: 10px; }
+  margin: 10px;
+  padding-bottom: 50px;
+  background-color: grey; }
 
 .signup-form {
   width: 80%;
@@ -351,6 +355,8 @@ h3 {
   padding-bottom: 20px; }
 .flametoken p {
   margin-left: 10px; }
+.flametoken .tokens {
+  background-color: oldlace; }
 
 .faqbutton {
   text-align: center; }
@@ -361,7 +367,7 @@ h3 {
   width: 80%;
   margin: 0 auto;
   background-color: lightsteelblue;
-  height: 800px;
+  height: 1100px;
   border-radius: 10px;
   margin-top: 20px;
   padding-left: 30px;
@@ -373,6 +379,19 @@ h3 {
     background-color: green;
     width: 92%;
     height: 600px; }
+  .largecontainer .item {
+    padding-right: 10px; }
+    .largecontainer .item h3 {
+      margin-left: 10px;
+      font-size: .9em; }
+    .largecontainer .item small {
+      margin-left: 10px; }
+  .largecontainer .row {
+    margin-bottom: 5px;
+    display: flex; }
+    .largecontainer .row .description {
+      margin-left: 40px;
+      width: 300px; }
 
 a {
   text-decoration: none; }
