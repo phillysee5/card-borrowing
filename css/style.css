@@ -7,7 +7,7 @@ body {
     max-width: 950px;
     margin: 0 auto;
     background-color: white;
-    height: 800px;
+    height: 1200px;
     margin-top: 20px; }
 
 .modal {
@@ -48,6 +48,13 @@ body {
       padding-right: 3px; }
     .modal li a:hover {
       color: #007788; }
+
+.listanitem {
+  height: 300px;
+  width: 70%;
+  background-color: yellow;
+  position: absolute;
+  margin-left: 10%; }
 
 .nav {
   background-color: lavender;
@@ -159,23 +166,20 @@ body {
   margin-top: 10px;
   margin-left: 10px;
   background-color: lightsteelblue;
-  width: 46%;
+  width: 47%;
   height: 220px;
   float: left; }
 
-.container a {
-  color: black;
-  background-color: oldlace;
-  padding-bottom: 4px;
-  padding-left: 4px;
-  padding-right: 4px; }
+@media screen and (max-width: 700px) {
+  .container {
+    width: 95%; } }
 .container h3 {
   padding-left: 10px; }
 
 .onloan {
   display: flex; }
   .onloan .item {
-    width: 200px;
+    width: 150px;
     height: 170px;
     background-color: oldlace;
     margin-left: 10px; }
@@ -236,9 +240,18 @@ h3 {
     margin-top: 10px;
     font-size: 1em;
     padding: 10px; }
+  .borrow p {
+    margin-left: 10px; }
   .borrow input {
     padding: 5px;
     width: 80%; }
+  .borrow i {
+    font-size: 1.3em;
+    color: black;
+    background-color: oldlace;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid grey; }
 
 a {
   text-decoration: none; }
