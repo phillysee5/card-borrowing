@@ -245,6 +245,9 @@ h3 {
     margin-top: 10px;
     font-size: 1em;
     padding: 10px; }
+  .borrow input {
+    padding: 5px;
+    width: 80%; }
 
 a {
   text-decoration: none; }

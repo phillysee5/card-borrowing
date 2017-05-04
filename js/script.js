@@ -4,4 +4,8 @@ $(document).ready(function(){
       $('.modal').show();
   });
 
+  $('.fa-window-close').click(function() {
+      $('.modal').hide();
+  });
+
 });
