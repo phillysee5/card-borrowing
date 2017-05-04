@@ -51,7 +51,28 @@ $border: 1px solid lightgrey;
       list-style: none;
       display: inline-block;
       padding-left: 0px;
-    }
+    li button {
+      text-align: left;
+      padding: 5px;
+      padding-top: 7px;
+      font-size: 1em;
+      background-color: mistyrose;
+      margin-bottom: 5px;
+      width: 70px;
+      border: $border;
+      border-radius: 3px;
+      }
+      @media screen and (max-width: 810px) {
+        li button {
+          padding: 3px;
+          font-size: .9em;
+        }
+      }
+      li button:hover {
+      background-color: honeydew;
+      color: darkgreen;
+      }
+
     li a {
       display: inline-block;
       text-decoration: none;
@@ -73,7 +94,7 @@ $border: 1px solid lightgrey;
       background-color: honeydew;
       color: darkgreen;
       }
-
+    }
 
 
   h1 {
