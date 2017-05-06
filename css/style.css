@@ -275,10 +275,6 @@ body {
   .item p {
     font-size: .8em;
     margin-left: 10px; }
-  .item .warning {
-    padding: 5px;
-    width: 10px;
-    background-color: lightgreen; }
 
 h3 {
   padding-top: 5px;
@@ -406,9 +402,9 @@ h3 {
     width: 92%;
     height: 80%; }
     .largecontainer .container .items {
-      display: block;
-      margin-left: 10px;
-      border-top: solid 5px lightsteelblue; }
+      border-top: solid 5px lightsteelblue;
+      border-bottom: solid 5px lightsteelblue;
+      padding-bottom: 20px; }
       .largecontainer .container .items img {
         margin-left: 10px; }
   .largecontainer .item {
@@ -460,6 +456,11 @@ h3 {
 
 .profile a {
   color: black; }
+
+.warning {
+  padding: 5px;
+  width: 10px;
+  background-color: #7AE7C7; }
 
 a {
   text-decoration: none; }

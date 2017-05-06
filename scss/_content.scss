@@ -49,11 +49,7 @@
       font-size: .8em;
       margin-left: 10px;
     }
-    .warning {
-      padding: 5px;
-      width: 10px;
-      background-color: lightgreen;
-    }
+
   }
 
 
@@ -222,9 +218,9 @@
     width: 92%;
     height: 80%;
     .items {
-      display: block;
-      margin-left: 10px;
       border-top: solid 5px lightsteelblue;
+      border-bottom: solid 5px lightsteelblue;
+      padding-bottom: 20px;
       img {
         margin-left: 10px;
       }
@@ -294,4 +290,10 @@
   a {
     color: black;
   }
+}
+
+.warning {
+  padding: 5px;
+  width: 10px;
+  background-color: #7AE7C7;
 }
