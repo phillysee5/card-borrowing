@@ -11,6 +11,9 @@ body {
     margin-top: 20px;
     padding-bottom: 20px; }
 
+.bluecontainer {
+  height: 1100px !important; }
+
 .dropdown {
   display: none;
   position: fixed;
@@ -156,7 +159,7 @@ body {
       background-color: mistyrose;
       margin-bottom: 5px;
       width: 70px;
-      border: 1px solid lightgray;
+      border: 1px solid lightgrey;
       border-radius: 3px; }
     @media screen and (max-width: 810px) {
       .nav ul li button {
@@ -173,7 +176,7 @@ body {
       background-color: mistyrose;
       margin-bottom: 5px;
       width: 60px;
-      border: 1px solid lightgray;
+      border: 1px solid lightgrey;
       border-radius: 3px; }
     @media screen and (max-width: 810px) {
       .nav ul li a {
@@ -246,6 +249,12 @@ body {
     width: 95%; } }
 .container h3 {
   padding-left: 10px; }
+.container .deets {
+  margin-left: 10px; }
+  .container .deets span {
+    font-size: 1.5em;
+    font-weight: 700;
+    border-bottom: solid grey 1px; }
 
 .onloan {
   display: flex; }
@@ -349,14 +358,30 @@ h3 {
     border-radius: 4px;
     border: 1px solid grey; }
 
+.profile small {
+  border-top: solid grey 1px; }
+@media screen and (max-width: 400px) {
+  .profile .weapon {
+    height: 35px;
+    width: 35px; } }
+
 .flametoken img {
-  margin-left: 10px; }
+  margin-left: 10px;
+  height: 20px;
+  width: 20px; }
 .flametoken h3 {
   padding-bottom: 20px; }
 .flametoken p {
-  margin-left: 10px; }
+  width: 250px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-top: solid grey 1px; }
+  .flametoken p span {
+    font-weight: 700; }
 .flametoken .tokens {
-  background-color: oldlace; }
+  background-color: oldlace;
+  margin: 10px;
+  width: 280px; }
 
 .faqbutton {
   text-align: center; }
@@ -377,9 +402,15 @@ h3 {
   .largecontainer h2 {
     color: grey; }
   .largecontainer .container {
-    background-color: green;
+    background-color: oldlace;
     width: 92%;
-    height: 600px; }
+    height: 80%; }
+    .largecontainer .container .items {
+      display: block;
+      margin-left: 10px;
+      border-top: solid 5px lightsteelblue; }
+      .largecontainer .container .items img {
+        margin-left: 10px; }
   .largecontainer .item {
     padding-right: 10px; }
     .largecontainer .item h3 {
@@ -425,7 +456,10 @@ h3 {
         margin-bottom: 10px; }
         @media screen and (max-width: 500px) {
           .largecontainer .row .borrowitem a {
-            font-size: .8em; } }
+            font-size: .7em; } }
+
+.profile a {
+  color: black; }
 
 a {
   text-decoration: none; }
