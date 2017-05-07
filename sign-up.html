@@ -27,7 +27,7 @@
             </ul>
             <ul>
               <li><a href="listings.html">Borrow</a></li>
-              <li><a href="">Report</a></li>
+              <li><a data-popup-open="popup-5">Report</a></li>
             </ul>
             </div>
             <a href="#" id="burger">
@@ -40,13 +40,13 @@
         <h3>Waitohu Up hoki Te tono Kāri</h3>
         <form action="success.html" method="POST" enctype="multipart/form-data">
           <p>Full Name</p>
-          <input class="textentry" type="text" name="namer" value="">
+          <input type="text" name="namer" value="">
           <br><br>
           <p>E-mail</p>
-          <input class="textentry" type="text" name="email" value="">
+          <input type="text" name="email" value="">
           <br><br>
           <p>Choose a Username</p>
-          <input class="textentry" type="text" name="username" value="">
+          <input type="text" name="username" value="">
           <br><br>
           <p>Password</p><small>(minimum 6 characters, include at least 1 number or special character)</small>
       		<input type="password" required>
@@ -70,21 +70,48 @@
       		<input type="checkbox" name="">Rogue
           </div>
           </form>
-          <button id="submit" type="button" name="button">Sign Up</button>
+          <button data-popup-open="popup-6" id="submit" type="button" name="button">Sign Up</button>
 
 
         <div class="dropdown">
           <div class="modal-menu">
             <a href="#"><i class="fa fa-window-close" aria-hidden="true"></i></a>
             <ul>
-              <li><a data-popup-open="popup-2" href="">Login</a></li>
+              <li><a data-popup-open="popup-2">Login</a></li>
               <li><a href="sign-up.html">Sign Up</a></li>
               <li><a href="account.html">Account</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="listings.html">Borrow</a></li>
-              <li><a href="">Report</a></li>
+              <li><a data-popup-open="popup-5">Report</a></li>
             </ul>
           </div>
+        </div>
+
+
+        <div class="popup" data-popup="popup-6">
+         <div class="popup-inner">
+             <h2>Thanks for signing up</h2>
+             <h3>Ngā Mihi Mō te te Takiuru Ake</h3>
+              <p>You will receive a confirmation email shortly</p>
+              <a class="popup-close" data-popup-close="popup-6" href="#">x</a>
+         </div>
+        </div>
+
+        <div class="popup" data-popup="popup-5">
+         <div class="popup-inner">
+             <h2>Report a User</h2>
+             <h3>Pūrongo i te Kaiwhakamahi</h3>
+              <form class="" action="index.html" method="post">
+                <p>Who would you like to report</p>
+                <input type="text" name="" value=""><br>
+                <p>What is your complaint</p>
+                <input class="textentry" type="text" name="" value=""><br>
+                <div class="image">
+                </div>
+              </form>
+             <p><a data-popup-close="popup-5" href="#">Submit</a></p>
+             <a class="popup-close" data-popup-close="popup-5" href="#">x</a>
+         </div>
         </div>
 
 
@@ -99,6 +126,7 @@
              <p>Password</p>
              <input type="password" name="" value=""><br>
              <p><a data-popup-close="popup-2" href="index.html">Proceed</a></p>
+             <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
            </form>
         </div>
     </div>

@@ -75,7 +75,7 @@ body {
   box-shadow: 0px 2px 6px black;
   border-radius: 3px;
   background: #fff; }
-  .popup-inner img {
+  .popup-inner #placeholder {
     margin-top: 10px;
     border: solid grey 4px; }
   .popup-inner a {
@@ -112,6 +112,14 @@ body {
 
 #login {
   height: 300px !important; }
+
+.feedback input {
+  height: 200px;
+  width: 200px; }
+
+.textentry {
+  height: 200px;
+  width: 200px; }
 
 .nav {
   background-color: lavender;
@@ -159,7 +167,7 @@ body {
       background-color: mistyrose;
       margin-bottom: 5px;
       width: 70px;
-      border: 1px solid lightgrey;
+      border: 1px solid lightgray;
       border-radius: 3px; }
     @media screen and (max-width: 810px) {
       .nav ul li button {
@@ -176,7 +184,7 @@ body {
       background-color: mistyrose;
       margin-bottom: 5px;
       width: 60px;
-      border: 1px solid lightgrey;
+      border: 1px solid lightgray;
       border-radius: 3px; }
     @media screen and (max-width: 810px) {
       .nav ul li a {
@@ -340,7 +348,9 @@ h3 {
   .borrow button {
     margin-top: 10px;
     font-size: 1em;
-    padding: 10px; }
+    padding: 10px;
+    background-color: oldlace;
+    border: solid grey 1px; }
   .borrow p {
     margin-left: 10px; }
   .borrow input {
@@ -353,6 +363,11 @@ h3 {
     padding: 10px;
     border-radius: 4px;
     border: 1px solid grey; }
+  .borrow #category {
+    color: black;
+    background-color: oldlace;
+    border: solid grey 1px;
+    padding: 8px; }
 
 .profile small {
   border-top: solid grey 1px; }
@@ -394,7 +409,11 @@ h3 {
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 50px;
+  padding-right: 30px;
   img-margin-left: 30px; }
+  .largecontainer p {
+    background-color: oldlace;
+    padding: 10px; }
   .largecontainer h2 {
     color: grey; }
   .largecontainer .container {

@@ -134,6 +134,8 @@
     margin-top: 10px;
     font-size: 1em;
     padding: 10px;
+    background-color: oldlace;
+    border: solid grey 1px;
   }
   p {
     margin-left: 10px;
@@ -149,6 +151,12 @@
   padding: 10px;
   border-radius: 4px;
   border: 1px solid grey;
+  }
+  #category {
+    color: black;
+    background-color: oldlace;
+    border: solid grey 1px;
+    padding: 8px;
   }
 }
 
@@ -207,6 +215,11 @@
   padding-left: 30px;
   padding-top: 20px;
   padding-bottom: 50px;
+  padding-right: 30px;
+  p {
+    background-color: oldlace;
+    padding: 10px;
+  }
   h2 {
     color: grey;
   }

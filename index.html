@@ -28,7 +28,7 @@
             </ul>
             <ul>
               <li><a href="listings.html">Borrow</a></li>
-              <li><a href="">Report</a></li>
+              <li><a data-popup-open="popup-5" href="">Report</a></li>
             </ul>
             </div>
             <a href="#" id="burger">
@@ -39,8 +39,8 @@
       <div class="container borrow">
         <h3>Borrow an Item</h3>
         <p>Search</p>
-        <input class="textentry" type="text" name="" value=""> <a href="listings.html"><i class="fa fa-search"></i></a>
-        <button type="button" name="button">Browse By Category</button>
+        <input type="text" name="" value=""> <a href="listings.html"><i class="fa fa-search"></i></a>
+        <a id="category" href="listings.html">Browse By Category</a>
         <button id="listanitem" data-popup-open="popup-1" type="button" name="button">List an item</button>
       </div>
       <div class="container ">
@@ -92,6 +92,8 @@
         <p>Current total = <span>12</span></p>
         <p>Rewards at <span>20</span>, <span>40</span>, &amp; <span>60</span> tokens</p>
       </div>
+
+
       <div class="faqbutton">
       <form method="post" action="faq.html">
       <button type="submit" name="button">How does our borrowing system work?</button>
@@ -106,7 +108,7 @@
             <li><a href="account.html">Account</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="listings.html">Borrow</a></li>
-            <li><a href="">Report</a></li>
+            <li><a data-popup-open="popup-5">Report</a></li>
           </ul>
        </div>
 
@@ -140,8 +142,26 @@
          <p>Password</p>
          <input type="password" name="" value=""><br>
          <p><a data-popup-close="popup-2" href="index.html">Proceed</a></p>
+         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
        </form>
     </div>
+</div>
+
+<div class="popup" data-popup="popup-5">
+ <div class="popup-inner">
+     <h2>Report a User</h2>
+     <h3>Pūrongo i te Kaiwhakamahi</h3>
+      <form class="" action="index.html" method="post">
+        <p>Who would you like to report</p>
+        <input type="text" name="" value=""><br>
+        <p>What is your complaint</p>
+        <input class="textentry" type="text" name="" value=""><br>
+        <div class="image">
+        </div>
+      </form>
+     <p><a data-popup-close="popup-5" href="#">Submit</a></p>
+     <a class="popup-close" data-popup-close="popup-5" href="#">x</a>
+ </div>
 </div>
 
     </div>
