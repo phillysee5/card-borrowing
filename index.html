@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Cerberus Games Borrowing System</title>
-
+    <meta name="keywords" content="Community, Cards, Card Borrowing, Magic, Yugioh, Pokemon, Trading Cards, Board Games, Wellington, Force of Will, Games, Dungeons and Dragons, D&amp;D">
   </head>
   <body>
     <div class="main">
@@ -17,25 +17,24 @@
         <br>
         <h2>Pūnaha Tono Hapori</h2>
         </div>
-          <div class="links">
-            <ul>
-              <li><button id="listanitem" data-popup-open="popup-2" type="button" name="button">Login</button></li>
-              <li><a href="sign-up.html">Sign Up</a></li>
-            </ul>
-            <ul>
-              <li><a href="account.html">Account</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-            </ul>
-            <ul>
-              <li><a href="listings.html">Borrow</a></li>
-              <li><a data-popup-open="popup-5" href="">Report</a></li>
-            </ul>
-            </div>
-            <a href="#" id="burger">
-              <i class="fa fa-bars burger" aria-hidden="true"></i>
-            </a>
-          </div>
-
+        <div class="links">
+          <ul>
+            <li><button id="listanitem" data-popup-open="popup-2" type="button" name="button">Login</button></li>
+            <li><a href="sign-up.html">Sign Up</a></li>
+          </ul>
+          <ul>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+          <ul>
+            <li><a href="listings.html">Borrow</a></li>
+            <li><a data-popup-open="popup-5" href="">Report</a></li>
+          </ul>
+        </div>
+        <a href="#" id="burger">
+          <i class="fa fa-bars burger" aria-hidden="true"></i>
+        </a>
+      </div>
       <div class="container borrow">
         <h3>Borrow an Item</h3>
         <p>Search</p>
@@ -60,7 +59,6 @@
           <div class="warning"></div>
         </div>
       </div>
-
       <div class="container profile">
         <img id="avatar" src="img/lars.jpg" alt="a half elven warrior brandishing a sword with long blonde hair">
         <a href="account.html">
@@ -92,76 +90,72 @@
         <p>Current total = <span>12</span></p>
         <p>Rewards at <span>20</span>, <span>40</span>, &amp; <span>60</span> tokens</p>
       </div>
-
-
       <div class="faqbutton">
-      <form method="post" action="faq.html">
-      <button type="submit" name="button">How does our borrowing system work?</button>
-      </form>
+        <form method="post" action="faq.html">
+          <button type="submit" name="button">How does our borrowing system work?</button>
+        </form>
+        <form method="post" action="http://cerberusgames.co.nz">
+          <button type="submit" name="button">Cerberus Games Main Website</button>
+        </form>
       </div>
-
-       <div class="dropdown">
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <ul>
-            <li><a data-popup-open="popup-2" href="">Login</a></li>
-            <li><a href="sign-up.html">Sign Up</a></li>
-            <li><a href="account.html">Account</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="listings.html">Borrow</a></li>
-            <li><a data-popup-open="popup-5">Report</a></li>
-          </ul>
-       </div>
-
-    <div class="popup" data-popup="popup-1">
-     <div class="popup-inner">
+      <div class="dropdown">
+        <i class="fa fa-window-close" aria-hidden="true"></i>
+        <ul>
+          <li><a data-popup-open="popup-2" href="">Login</a></li>
+          <li><a href="sign-up.html">Sign Up</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="listings.html">Borrow</a></li>
+          <li><a data-popup-open="popup-5">Report</a></li>
+        </ul>
+      </div>
+     <div class="popup" data-popup="popup-1">
+      <div class="popup-inner">
          <h2>List an Item</h2>
          <h3>Whakarārangi i te Tūemi</h3>
-          <form class="" action="index.html" method="post">
-            <p>Card/Deck Name</p>
-            <input type="text" name="" value=""><br>
-            <p>Condition</p>
-            <input type="text" name="" value=""><br>
-            <div class="image">
-              <p>Upload an image</p>
-              <img id="placeholder" src="img/image-placeholder.png" alt="list item image" height="100px" width="100px">
-              <input id="choosefile" type="file">
-            </div>
-          </form>
+         <form class="" action="index.html" method="post">
+           <p>Card/Deck Name</p>
+           <input type="text" name="" value=""><br>
+           <p>Condition</p>
+           <input type="text" name="" value=""><br>
+           <div class="image">
+             <p>Upload an image</p>
+             <img id="placeholder" src="img/image-placeholder.png" alt="list item image" height="100px" width="100px">
+             <input id="choosefile" type="file">
+           </div>
+         </form>
          <p><a data-popup-close="popup-1" href="#">List This Item</a></p>
          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+       </div>
      </div>
- </div>
-
- <div class="popup" data-popup="popup-2">
-  <div id="login" class="popup-inner">
-      <h2>Login</h2>
-      <h3>Takiuru</h3>
-       <form class="" action="index.html" method="post">
-         <p>Username</p>
-         <input type="text" name="" value=""><br>
-         <p>Password</p>
-         <input type="password" name="" value=""><br>
-         <p><a data-popup-close="popup-2" href="index.html">Proceed</a></p>
-         <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-       </form>
-    </div>
-</div>
-
-<div class="popup" data-popup="popup-5">
- <div class="popup-inner">
-     <h2>Report a User</h2>
-     <h3>Pūrongo i te Kaiwhakamahi</h3>
-      <form class="" action="index.html" method="post">
-        <p>Who would you like to report</p>
-        <input type="text" name="" value=""><br>
-        <p>What is your complaint</p>
-        <input class="textentry" type="text" name="" value=""><br>
-      </form>
-     <p><a data-popup-close="popup-5" href="#">Submit</a></p>
-     <a class="popup-close" data-popup-close="popup-5" href="#">x</a>
- </div>
-</div>
-
+     <div class="popup" data-popup="popup-2">
+       <div id="login" class="popup-inner">
+         <h2>Login</h2>
+         <h3>Takiuru</h3>
+         <form class="" action="index.html" method="post">
+            <p>Username</p>
+            <input type="text" name="" value=""><br>
+            <p>Password</p>
+            <input type="password" name="" value=""><br>
+            <p><a data-popup-close="popup-2" href="index.html">Proceed</a></p>
+            <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+         </form>
+        </div>
+      </div>
+      <div class="popup" data-popup="popup-5">
+        <div class="popup-inner">
+          <h2>Report a User</h2>
+          <h3>Pūrongo i te Kaiwhakamahi</h3>
+          <form class="" action="index.html" method="post">
+            <p>Who would you like to report</p>
+            <input type="text" name="" value=""><br>
+            <p>What is your complaint</p>
+            <input class="textentry" type="text" name="" value=""><br>
+          </form>
+          <p><a data-popup-close="popup-5" href="#">Submit</a></p>
+          <a class="popup-close" data-popup-close="popup-5" href="#">x</a>
+        </div>
+      </div>
     </div>
     <script src="https://use.fontawesome.com/96bd46d27f.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

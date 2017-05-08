@@ -1,5 +1,5 @@
+$standard: 10px;
 $border: 1px solid lightgrey;
-
 .nav {
   background-color: lavender;
   height: 100px;
@@ -15,7 +15,7 @@ $border: 1px solid lightgrey;
     img {
     height: 80px;
     width: 80px;
-    margin-left: 10px;
+    margin-left: $standard;
     margin-top: 20px;
     float: left;
     }
@@ -35,7 +35,7 @@ $border: 1px solid lightgrey;
   }
   .links {
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: $standard;
     }
     @media screen and (max-width: 810px) {
       .links {
@@ -69,20 +69,19 @@ $border: 1px solid lightgrey;
         }
       }
       li button:hover {
-      background-color: honeydew;
-      color: darkgreen;
+        background-color: honeydew;
+        color: darkgreen;
       }
-
-    li a {
-      display: inline-block;
-      text-decoration: none;
-      color: black;
-      padding: 5px;
-      background-color: mistyrose;
-      margin-bottom: 5px;
-      width: 60px;
-      border: $border;
-      border-radius: 3px;
+      li a {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        padding: 5px;
+        background-color: mistyrose;
+        margin-bottom: 5px;
+        width: 60px;
+        border: $border;
+        border-radius: 3px;
       }
       @media screen and (max-width: 810px) {
         li a {
@@ -95,31 +94,24 @@ $border: 1px solid lightgrey;
       color: darkgreen;
       }
     }
-
-
   h1 {
     text-align: center;
     top: 0px;
     padding-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
-  }
-    @media screen and (max-width: 810px) {
-      h1 {
+      @media screen and (max-width: 810px) {
         font-size: 1.5em;
       }
-    }
-    @media screen and (max-width: 500px) {
-      h1 {
-      margin-top: 30px;
-      font-size: 1.1em;
+      @media screen and (max-width: 500px) {
+        margin-top: 30px;
+        font-size: 1.1em;
       }
-    }
-    @media screen and (max-width: 450px) {
-      h1 {
+      @media screen and (max-width: 450px) {
         margin-top: 30px;
         font-size: 1em;
         font-weight: 900;
+        width: 200px;
       }
     }
   h2 {
@@ -146,7 +138,7 @@ $border: 1px solid lightgrey;
     h2 {
       font-size: 0.8em;
       margin-top: 30px;
-      left: 50px;
+      left: 80px;
     }
   }
   .burger {
@@ -154,16 +146,11 @@ $border: 1px solid lightgrey;
     margin-right: 20px;
     font-size: 3em;
     color: black;
-
-      }
       @media screen and (min-width: 700px) {
-      .burger {
         display: none;
         }
-      }
       @media screen and (min-width: 0px) and (max-width: 700px) {
-      .burger {
         display: block;
-    }
-  }
+      }
+   }
 }

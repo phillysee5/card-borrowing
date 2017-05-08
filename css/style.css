@@ -167,7 +167,7 @@ body {
       background-color: mistyrose;
       margin-bottom: 5px;
       width: 70px;
-      border: 1px solid lightgray;
+      border: 1px solid lightgrey;
       border-radius: 3px; }
     @media screen and (max-width: 810px) {
       .nav ul li button {
@@ -184,7 +184,7 @@ body {
       background-color: mistyrose;
       margin-bottom: 5px;
       width: 60px;
-      border: 1px solid lightgray;
+      border: 1px solid lightgrey;
       border-radius: 3px; }
     @media screen and (max-width: 810px) {
       .nav ul li a {
@@ -199,18 +199,19 @@ body {
     padding-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px; }
-  @media screen and (max-width: 810px) {
-    .nav h1 {
-      font-size: 1.5em; } }
-  @media screen and (max-width: 500px) {
-    .nav h1 {
-      margin-top: 30px;
-      font-size: 1.1em; } }
-  @media screen and (max-width: 450px) {
-    .nav h1 {
-      margin-top: 30px;
-      font-size: 1em;
-      font-weight: 900; } }
+    @media screen and (max-width: 810px) {
+      .nav h1 {
+        font-size: 1.5em; } }
+    @media screen and (max-width: 500px) {
+      .nav h1 {
+        margin-top: 30px;
+        font-size: 1.1em; } }
+    @media screen and (max-width: 450px) {
+      .nav h1 {
+        margin-top: 30px;
+        font-size: 1em;
+        font-weight: 900;
+        width: 200px; } }
   .nav h2 {
     padding-top: 0px;
     margin-top: 0px;
@@ -230,18 +231,18 @@ body {
     .nav h2 {
       font-size: 0.8em;
       margin-top: 30px;
-      left: 50px; } }
+      left: 80px; } }
   .nav .burger {
     margin-top: 30px;
     margin-right: 20px;
     font-size: 3em;
     color: black; }
-  @media screen and (min-width: 700px) {
-    .nav .burger {
-      display: none; } }
-  @media screen and (min-width: 0px) and (max-width: 700px) {
-    .nav .burger {
-      display: block; } }
+    @media screen and (min-width: 700px) {
+      .nav .burger {
+        display: none; } }
+    @media screen and (min-width: 0px) and (max-width: 700px) {
+      .nav .burger {
+        display: block; } }
 
 .container {
   box-sizing: border-box;
@@ -325,10 +326,10 @@ h3 {
       height: 150px;
       width: 150px;
       border: solid grey 10px; }
-    @media screen and (max-width: 600px) {
-      .signup-form .image #placeholder {
-        height: 75px;
-        width: 75px; } }
+      @media screen and (max-width: 600px) {
+        .signup-form .image #placeholder {
+          height: 75px;
+          width: 75px; } }
   .signup-form input {
     padding: 5px;
     width: 80%;

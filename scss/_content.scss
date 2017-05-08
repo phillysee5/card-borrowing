@@ -1,3 +1,6 @@
+$border: solid grey 1px;
+$standard: 10px;
+// variable ^ //
 .container {
   box-sizing: border-box;
   margin-top: 10px;
@@ -7,63 +10,58 @@
   height: 220px;
   float: left;
   }
-@media screen and (max-width: 700px) {
-  .container {
+  @media screen and (max-width: 700px) {
+   .container {
     width: 95%;
   }
 }
 .container {
   h3 {
-    padding-left: 10px;
+    padding-left: $standard;
   }
   .deets {
-    margin-left: 10px;
-
+    margin-left: $standard;
     span {
       font-size: 1.5em;
       font-weight: 700;
       border-bottom: solid grey 1px;
-
     }
   }
 }
 .onloan {
   display: flex;
 }
- .item {
-    width: 100px;
-    height: 170px;
-    background-color: oldlace;
-    margin-left: 10px;
-    img {
-      margin-top: 10px;
-      margin-left: 10px;
-      height: 100px;
-    }
-    h4 {
-      font-size: .8em;
-      margin-left: 10px;
-      margin-top: 0;
-      }
-    p {
-      font-size: .8em;
-      margin-left: 10px;
-    }
-
+.item {
+  width: 100px;
+  height: 170px;
+  background-color: oldlace;
+  margin-left: 10px;
+  img {
+    margin-top: $standard;
+    margin-left: $standard;
+    height: 100px;
   }
-
-
-  h3{
+  h4 {
+    font-size: .8em;
+    margin-left: $standard;
+    margin-top: 0;
+    }
+  p {
+    font-size: .8em;
+    margin-left: $standard;
+  }
+}
+h3{
     padding-top: 5px;
     margin: 0;
   }
-  #avatar {
-    height: 120px;
-    width: 120px;
-    float: left;
-    margin: 10px;
-    padding-bottom: 50px;
-    background-color: grey;
+#avatar {
+  height: 120px;
+  width: 120px;
+  float: left;
+  margin: $standard;
+  padding-bottom: 50px;
+  background-color: grey;
   }
 
 .signup-form {
@@ -75,70 +73,64 @@
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 20px;
-
   h3 {
     color: grey;
-  }
-
-  .chooseclass {
-    width: 48%;
-    height: 200px;
-    padding-left: 5px;
-    border-right: solid grey 2px;
-    input {
-      width: 10%;
-      }
-    img {
-      width: 50px;
-      height: 50px;
     }
-  }
-  .image {
-    width: 48%;
-    margin-top: 20px;
-
-    float: right;
-    #placeholder {
-      height: 150px;
-      width: 150px;
-      border: solid grey 10px;
+.chooseclass {
+      width: 48%;
+      height: 200px;
+      padding-left: 5px;
+      border-right: solid grey 2px;
+      input {
+        width: 10%;
       }
-      @media screen and (max-width: 600px){
-        #placeholder {
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .image {
+      width: 48%;
+      margin-top: 20px;
+      float: right;
+      #placeholder {
+        height: 150px;
+        width: 150px;
+        border: solid grey $standard;
+        // mixin//
+        @media screen and (max-width: 600px){
           height: 75px;
           width: 75px;
         }
       }
     }
-
     input {
       padding: 5px;
       width: 80%;
       border-radius: 4px;
-      }
+    }
     #submit {
       position: absolute;
       width: 150px !important;
       margin-top: 60px;
       font-size: 1.2em;
       padding: 15px;
-      }
     }
+}
 .buttonholder {
   text-align: center;
 }
-
 .borrow {
-  padding-left: 15px;
-  button {
-    margin-top: 10px;
-    font-size: 1em;
-    padding: 10px;
-    background-color: oldlace;
-    border: solid grey 1px;
+    padding-left: 15px;
+    button {
+      margin-top: $standard;
+      font-size: 1em;
+      padding: $standard;
+      background-color: oldlace;
+      border: $border;
   }
   p {
-    margin-left: 10px;
+    margin-left: $standard;
   }
   input {
     padding: 5px;
@@ -148,7 +140,7 @@
   font-size: 1.3em;
   color: black;
   background-color: oldlace;
-  padding: 10px;
+  padding: $standard;
   border-radius: 4px;
   border: 1px solid grey;
   }
@@ -159,23 +151,20 @@
     padding: 8px;
   }
 }
-
 .profile {
   small {
-    border-top: solid grey 1px;
+    border-top: $border;
   }
   .weapon {
     @media screen and (max-width: 400px){
           height: 35px;
         width: 35px;
       }
-    }
-  }
-
-
+   }
+}
 .flametoken {
   img {
-    margin-left: 10px;
+    margin-left: $standard;
     height: 20px;
     width: 20px;
   }
@@ -184,8 +173,8 @@
   }
   p {
     width: 250px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: $standard;
+    margin-right: $standard;
     border-top: solid grey 1px;
     span {
       font-weight: 700;
@@ -193,24 +182,22 @@
   }
   .tokens {
     background-color: oldlace;
-    margin: 10px;
+    margin: $standard;
     width: 280px;
   }
 }
-
 .faqbutton {
   text-align: center;
   button {
     margin-top: 50px;
   }
 }
-
 .largecontainer {
   width: 80%;
   margin: 0 auto;
   background-color: lightsteelblue;
   height: 100%;
-  border-radius: 10px;
+  border-radius: $standard;
   margin-top: 20px;
   padding-left: 30px;
   padding-top: 20px;
@@ -218,7 +205,7 @@
   padding-right: 30px;
   p {
     background-color: oldlace;
-    padding: 10px;
+    padding: $standard;
   }
   h2 {
     color: grey;
@@ -235,29 +222,26 @@
       border-bottom: solid 5px lightsteelblue;
       padding-bottom: 20px;
       img {
-        margin-left: 10px;
+        margin-left: $standard;
       }
-
-    }
-  }
-
-
-  .item {
-    padding-right: 10px;
+   }
+}
+.item {
+    padding-right: $standard;
     h3 {
-      margin-left: 10px;
+      margin-left: $standard;
       font-size: .9em;
     }
     small {
-      margin-left: 10px;
+      margin-left: $standard;
     }
   }
   .row {
-    margin-bottom: 10px;
+    margin-bottom: $standard;
     display: flex;
     .description {
-      margin-left: 10px;
-      padding-left: 10px;
+      margin-left: $standard;
+      padding-left: $standard;
       width: 320px;
       background-color: oldlace;
       @media screen and (max-width: 870px){
@@ -270,7 +254,7 @@
     .borrowitem {
       background-color: oldlace;
       width: 200px;
-      margin-left: 10px;
+      margin-left: $standard;
       @media screen and (max-width: 500px){
         width: 150px;
       }
@@ -281,30 +265,27 @@
       a {
         background-color: mistyrose;
         color: black;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: $standard;
+        padding-right: $standard;
         margin-top: 20px;
-        margin-bottom: 10px;
+        margin-bottom: $standard;
         border: solid grey 1px;
         border-radius: 3px;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-left: $standard;
+        margin-top: $standard;
+        margin-bottom: $standard;
         @media screen and (max-width: 500px){
           font-size: .7em;
         }
       }
     }
-
   }
 }
-
 .profile {
   a {
     color: black;
   }
 }
-
 .warning {
   padding: 5px;
   width: 10px;

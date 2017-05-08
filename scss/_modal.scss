@@ -1,4 +1,4 @@
-    .dropdown {
+.dropdown {
       display: none;
       position: fixed;
       background-color: lavender;
@@ -43,7 +43,6 @@
            }
          }
        }
-
        /* Outer */
        .popup {
            width:100%;
@@ -54,7 +53,6 @@
            left:0px;
            background:rgba(0,0,0,0.75);
        }
-
        /* Inner */
        .popup-inner {
            width:250px;
@@ -85,11 +83,9 @@
              h2 {
                margin-bottom: 0;
              }
-
-       }
-
-       /* Close Button */
-       .popup-close {
+         }
+        /* Close Button */
+        .popup-close {
            width:30px;
            height:30px;
            padding-top:4px;
@@ -108,18 +104,15 @@
            line-height:100%;
            color:#fff;
         }
-
-  #login {
+#login {
     height: 300px !important;
     }
-
 .feedback {
   input {
     height: 200px;
     width: 200px;
   }
 }
-
 .textentry {
   height: 200px;
   width: 200px;
