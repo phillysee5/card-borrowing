@@ -142,7 +142,7 @@ h3{
   background-color: oldlace;
   padding: $standard;
   border-radius: 4px;
-  border: 1px solid grey;
+  border: $border;
   }
   #category {
     color: black;
@@ -291,3 +291,11 @@ h3{
   width: 10px;
   background-color: #7AE7C7;
 }
+
+
+  .question {
+    p {
+    max-width: 500px !important;
+    line-height: 1.5;
+    }
+  }
