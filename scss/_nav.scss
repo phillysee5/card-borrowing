@@ -95,17 +95,21 @@ $border: 1px solid lightgrey;
       }
     }
   h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 1.4em;
     text-align: center;
-    top: 0px;
+    top: 10px;
     padding-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
       @media screen and (max-width: 810px) {
         font-size: 1.5em;
+        width: 300px;
       }
       @media screen and (max-width: 500px) {
         margin-top: 30px;
         font-size: 1.1em;
+        width: 250px;
       }
       @media screen and (max-width: 450px) {
         margin-top: 30px;
@@ -115,6 +119,7 @@ $border: 1px solid lightgrey;
       }
     }
   h2 {
+    font-family: 'Cinzel Decorative', cursive;
     padding-top: 0px;
     margin-top: 0px;
     margin-left: 50px;
@@ -125,20 +130,23 @@ $border: 1px solid lightgrey;
   }
   @media screen and (max-width: 810px) {
     h2 {
-      top: 70px;
+      top: 110px;
       font-size: 1.1em;
     }
   }
   @media screen and (max-width: 500px) {
     h2 {
+      top: 70px;
+      margin-top: 30px;
       font-size: 0.9em;
+      margin-left: 55px;
     }
   }
   @media screen and (max-width: 450px) {
     h2 {
       font-size: 0.8em;
       margin-top: 30px;
-      left: 80px;
+      left: 65px;
     }
   }
   .burger {
